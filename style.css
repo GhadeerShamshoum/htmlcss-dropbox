@@ -445,31 +445,70 @@ img
 .part{
     width: calc(100% / 3);
     height: 500px;
+    float: left;
     
 }
 .part.left{
     height: 100%;
 }
 
-#group1 , #group2, #group3, #group4 {
+#group1{
     height: 50%;
 }
 
-.sponsor-logo1{
-    background-color: rgb(151, 216, 151);
+.sponsor{
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    width: 49%;
     
 }
 
+
+.sponsor.logo1 {
+    background-color: rgb(151, 216, 151);
+    position: relative;
+          
+}
+
+.logo{
+    height: 19%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.sponsor.logo2{
+    background-color:rgb(82, 46, 52);
+    position: relative;
+}
+
 #group2{
-    float: right;
+    float: left;
+    height: 50%;
 }
 
-
-.sponsor-logo{
-    width: calc(100% / 2);
+.sponsor.logo3 {
     height: 100%;
-    background-color: chocolate;
+    width: 50%;
+    background-color: rgb(151, 216, 151);
 }
+
+.sponsor.logo4{
+    background-color:rgb(28, 111, 167);
+    height: 100%;
+    width: 50%;    
+}
+
+
+
+
+
+
 
 
 
