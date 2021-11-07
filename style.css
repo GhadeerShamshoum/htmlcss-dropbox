@@ -215,7 +215,7 @@ main .choices{
   }
 
   #columns{
-      height: 800px;
+      height: 1100px;
       margin: 20px 0;
       
 }
@@ -223,16 +223,16 @@ main .choices{
 .column{
      float: left;
       width: calc(100% / 3 - 40px);
-      height: 800px;
+      height: 1100px;
       border: 1px solid darkgray ;
   }
 
-  .column-bottom{
+  .column-bottom-part{
       padding: 30px 10px 30px 30px;
   }
 
   
-  .column.two{
+  .column.two, #special-container-business{
       margin: 0 60px;
   }
 
@@ -242,15 +242,12 @@ main .choices{
       border-bottom: 1px solid darkgray;
       color: darkslategray;
   }
-  .column-bottom h3{
-      font-weight: 700;
+  .column-bottom-part h3{
+      font-weight: 800;
       padding: 0 0 20px 0;
   }
 
-  .column.price{
-
-  }
-
+img
   .price-details{
       color:rgb(139, 136, 136);
       margin: 15px 0 50px 0;
@@ -270,13 +267,132 @@ main .choices{
     font-size: 12px;
   }
 
-  .text{
-      width: 50px;
+
+  .aquista-line{
+      display: inline-block;
+      padding: 30px 0;
+      border-bottom:1px solid gray;
   }
   
   .aquistaora-link{
       color: blue;
       text-decoration: underline;
   }
+  .punti-title{
+      margin: 30px 0; 
+  }
+
+  .fa-check{
+      color:blue
+  }
+
+  .check-list{
+      padding: 15px 0;
+  }
+
+  .check-list-lines{
+      list-style: none;
+      display: inline;
+  }
+
+  .col-bottom{
+      margin: 50px 0 70px 0;
+      height: 230px;
+      border: 1px solid darkgray ;
+  }
+
+  .col-b-title{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid darkgray;
+    color: darkslategray;
+  }
+
+  .bottom-part-col{
+      padding: 30px 15px;
+  }
+
+  .contatta-ufficio{
+      float: right;
+  }
+
+  .partner{
+      position: relative;
+      height: 500px;
+  }
+  .partner #photo{
+      width: 50%;
+      height: 500px;
+    }
+
+    .partner-text{
+        height: 100%;
+        width: 39%;
+        position: absolute;
+        top:60px;
+        margin-left: 60px;
+    }
+    
+    .partner #photo img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+  }
+
+  .partner-text, .partner #photo img{
+      display: inline-block;
+  }
+
+  .partner h2{
+    font-weight: 800;
+  }
+
+  p{
+      padding: 30px 0 20px 0;
+      line-height: 27px;
+  }
+  #partner-p{
+      width: 95%;
+  }
+
+  #button-partner{
+      border: 1px solid black;
+      padding: 10px 25px;
+
+  }
+
+  #business{
+      padding: 80px 0;
+  }
+
+  #business .row{
+      margin: 80px 0;
+  }
+
+  .container-business{
+      width: calc(100% / 3 - 40px);
+      float: left;
+      height: 500px;
+  }
+
+            
+  .container-photo{
+      height: 250px;
+
+  }
+
+  #business #img1{
+      background-image: url(img/business-feature-switching-tools.png);
+      background-position: center;
+      background-size: cover;
+  }
+
+
+
+
+
+  
+
+ 
   
 
