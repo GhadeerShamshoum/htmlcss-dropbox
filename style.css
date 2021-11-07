@@ -347,14 +347,13 @@ img
     font-weight: 800;
   }
 
-  p{
+  .partner p, .row p{
       padding: 30px 0 20px 0;
       line-height: 27px;
-  }
-  #partner-p{
-      width: 95%;
-  }
-
+    }
+    #partner-p{
+        width: 95%;
+    }
   #button-partner{
       border: 1px solid black;
       padding: 10px 25px;
@@ -365,8 +364,11 @@ img
       padding: 80px 0;
   }
 
-  #business .row{
+  .row{
       margin: 80px 0;
+      content: '';
+      display: table;
+      clear: both;
   }
 
   .container-business{
@@ -381,18 +383,94 @@ img
 
   }
 
-  #business #img1{
-      background-image: url(img/business-feature-switching-tools.png);
+  #img1, #img2, #img3, #img4, #img5, #img6{
       background-position: center;
       background-size: cover;
+  } 
+  
+  #business #img1{
+      background-image: url(img/business-feature-switching-tools.png);
   }
 
+  .text-under-photo{
+      padding-top: 30px;
+  }
+
+  .container-business p{
+      width: 93%;
+
+  }
+
+  .container-business p span{
+      text-decoration: underline;
+  }
+
+  #business #img2{
+       background-image: url(img/business-feature-coordinate-it.png);
+}
+    #business #img3{
+       background-image: url(img/business-feature-multi-device.png);
+}
+    #business #img4{
+       background-image: url(img//business-feature-integrations-it.png);
+}
+    #business #img5{
+        background-image: url(img/business-feature-send-files-it.png);
+}
+    #business #img6{
+         background-image: url(img/business-feature-security.png);
+}
+
+#number-of-team{
+    line-height: 20px;
+    margin: 30px 0;
+}
+
+#Scopri{
+    color: blue;
+    text-decoration: underline;
+}
+
+#link-scopridipiù{
+    padding: 20px 0;
+
+}
+
+#sponsors{
+    border:1px solid chocolate;
+    width: 100vw;
+    height: 500px;
+}
+
+.part{
+    width: calc(100% / 3);
+    height: 500px;
+    
+}
+.part.left{
+    height: 100%;
+}
+
+#group1 , #group2, #group3, #group4 {
+    height: 50%;
+}
+
+.sponsor-logo1{
+    background-color: rgb(151, 216, 151);
+    
+}
+
+#group2{
+    float: right;
+}
+
+
+.sponsor-logo{
+    width: calc(100% / 2);
+    height: 100%;
+    background-color: chocolate;
+}
 
 
 
-
-  
-
- 
-  
 
