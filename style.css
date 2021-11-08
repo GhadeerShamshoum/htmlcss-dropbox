@@ -56,8 +56,11 @@ nav a:hover{
 }
 
 .right-side{
-   float: right;
-    
+   float: right;  
+}
+
+.left-side{
+    float: left;
 }
 
 
@@ -139,7 +142,7 @@ padding: 80px ;
     font-size: 30px;
 }
 
-main{
+main, .dropBox-business{
     width: 73%;
     margin: auto;
     padding: 80px 0;
@@ -437,7 +440,7 @@ img
 }
 
 #sponsors{
-    border:1px solid chocolate;
+    
     width: 100vw;
     height: 500px;
 }
@@ -452,15 +455,16 @@ img
     height: 100%;
 }
 
-#group1{
-    height: 50%;
+#group1, #group2, #group3, #group4{
+    height: 250px;
+    font-size: 0;
 }
 
-.sponsor{
+.sponsor.logo1, .sponsor.logo2, .sponsor.logo3, .sponsor.logo4, .sponsor.logo5, .sponsor.logo6, .sponsor.logo7, .sponsor.logo8 {
     display: inline-block;
     margin: 0;
     height: 100%;
-    width: 49%;
+    width: 50%;
     
 }
 
@@ -472,11 +476,12 @@ img
 }
 
 .logo{
-    height: 19%;
+    width: 50%;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    filter: invert(1);
 
 }
 
@@ -488,22 +493,78 @@ img
 }
 
 #group2{
-    float: left;
     height: 50%;
 }
 
 .sponsor.logo3 {
-    height: 100%;
-    width: 50%;
-    background-color: rgb(151, 216, 151);
+    background-color: rgb(10, 131, 179);
+    position: relative;
 }
+
 
 .sponsor.logo4{
-    background-color:rgb(28, 111, 167);
-    height: 100%;
-    width: 50%;    
+    background-color:red;
+    position: relative;      
 }
 
+.part.center{
+    padding: 40px;
+    background-color: lightgray;
+}
+
+#img-center-part{
+    height: 40px;
+    
+}
+.hr-part-center{
+    border: solid rgb(185, 184, 184);
+    width: 70px;
+    margin: 30px 0 50px 0;
+}
+
+.paragraph-center{
+    margin: 50px 0;
+    line-height: 19px;
+}
+
+.sponsor.logo5{
+    background-color:rgb(196, 14, 14);
+    position: relative;      
+}
+
+.sponsor.logo6{
+    background-color: lightblue;
+    position: relative;      
+}
+
+.sponsor.logo7{
+    background-color: darkblue;
+    position: relative;      
+}
+
+.sponsor.logo8{
+    background-color: rgb(223, 175, 56);
+    position: relative;      
+}
+
+#under-sponsers{
+    
+    background-color: lightblue;
+    width: 100vw;
+
+}
+
+.dropBox-business{
+    height: 80px;
+    width: ;
+}
+
+#under-sponsers-text{
+    color: rgb(92, 15, 15);
+    font-weight: 700;
+    font-size: 40px;
+
+}
 
 
 
