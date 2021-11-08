@@ -446,7 +446,7 @@ img
 
 }
 
-#sponsors{
+#sponsors, footer{
     
     width: 100vw;
     height: 500px;
@@ -593,7 +593,7 @@ img
 }
 
 
-.fa-angle-down, .fa-angle-up{
+.fa-angle-down, .row-question .fa-angle-up{
     position: relative;
     left: 850px;
 }
@@ -609,13 +609,58 @@ img
 
 
 .row-question:hover .fa-angle-down,
-.fa-angle-up {
+.row-question .fa-angle-up {
     display: none;
 }
 .row-question:hover .fa-angle-up {
     display: inline;
 }
+footer{
+    color: white;
+    background-color: black;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+#footer-container{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.col{
+    margin-right: 50px;
+    height: 100px;
+    width: 166px;
+    float: left;
+}
 
+footer .col h2{
+    margin-bottom: 10px;
+}
+
+footer .col li{
+    list-style: none;
+    line-height: 2;
+}
+
+
+.language{
+    display: block;
+}
+#columns-footer{
+    height: 250px;
+}
+
+footer hr{
+    width: 80px;
+    margin-bottom: 50px;
+}
+.language-text{
+    display: inline-block;
+}
 
 
 
