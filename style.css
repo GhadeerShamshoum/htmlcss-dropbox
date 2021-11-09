@@ -36,7 +36,7 @@ nav{
     margin: 0 25px;
 }
 
-nav, nav li, .left-side, .right-side {
+nav, nav li, .left-side, .right-side, nav a {
     display: inline-block;
 }
 
@@ -45,15 +45,18 @@ nav li{
     
 }
 
-a{
+nav a{
     color: black;
     text-decoration: none;
     list-style-type: none;
+    display: inline-block;
+    line-height: 100px;
+    position: relative;
 
 }
 
 nav a:hover{
-    text-decoration: underline;
+    border-bottom: 3px solid blue;
 }
 
 .right-side{
@@ -83,6 +86,41 @@ nav a:hover{
     background-color: rgba(44, 31, 230, 0.8);
 
 }
+
+
+  
+  nav a .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    top: 98%;
+    left: 50%;
+    margin-left: -60px;
+    text-align: center;
+  }
+  
+    .tooltiptext{
+    background-color: rgb(152, 188, 236 );
+    position: absolute;
+    z-index: 1;
+  }
+  nav a .tooltiptext::before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background:  rgb(152, 188, 236);
+      top:-4px;
+      left: 19px;
+      transform: rotate(45deg);
+  }
+
+  .tooltiptext li{
+      display: block;
+  }
+  
+  nav a:hover .tooltiptext {
+    visibility: visible;
+  }
     
 .top-section{
     
@@ -449,29 +487,36 @@ main .choices{
 #sponsors, footer{
     
     width: 100vw;
-    height: 500px;
-}
-
-.part{
-    width: calc(100% / 3);
-    height: 500px;
-    float: left;
-    
-}
-.part.left{
     height: 100%;
 }
 
+#sponsors::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.part{
+    float: left;
+    
+}
+.part.left, .part.right{
+    width: 30%;
+}
+.part.center{
+    width: 40%;
+}
+
+
 #group1, #group2, #group3, #group4{
-    height: 250px;
     font-size: 0;
 }
 
 .sponsor.logo1, .sponsor.logo2, .sponsor.logo3, .sponsor.logo4, .sponsor.logo5, .sponsor.logo6, .sponsor.logo7, .sponsor.logo8 {
     display: inline-block;
     margin: 0;
-    height: 100%;
     width: 50%;
+    height: 15vh;
     
 }
 
