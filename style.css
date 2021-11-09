@@ -91,8 +91,8 @@ nav a:hover{
   
   nav a .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    top: 98%;
+    width: 140px;
+    top: 100%;
     left: 50%;
     margin-left: -60px;
     text-align: center;
@@ -145,6 +145,7 @@ nav a:hover{
     line-height: 20px;  
 }
 .paragraph-top p{
+    margin-top: 60px;
     width: 307px;
 }
 .container-jumbo{
@@ -153,17 +154,11 @@ nav a:hover{
    position: relative;
 }
 .container-jumbo img{ 
-    width:60%; 
+    width:70%; 
     position:absolute;
     left: 341px;   
+    top: 253px;
 }
-
-.img-jumbo img{
-    width: 55%;
-    object-fit: cover;
-    position: absolute;
-    top:180px;
-    left: 520px;
 
 }
 .img-jumbo, .paragraph-top{
@@ -498,6 +493,7 @@ main .choices{
 
 .part{
     float: left;
+    height: 30vw;
     
 }
 .part.left, .part.right{
@@ -510,16 +506,21 @@ main .choices{
 
 #group1, #group2, #group3, #group4{
     font-size: 0;
+    height: 15vw;
 }
 
 .sponsor.logo1, .sponsor.logo2, .sponsor.logo3, .sponsor.logo4, .sponsor.logo5, .sponsor.logo6, .sponsor.logo7, .sponsor.logo8 {
     display: inline-block;
     margin: 0;
     width: 50%;
-    height: 15vh;
+    height: 100%;
     
 }
 
+#sponsors.sponsor:hover .sponsor::after{
+    border:3px rgb(191, 219, 191);
+
+}
 
 .sponsor.logo1 {
     background-color: rgb(151, 216, 151);
@@ -706,10 +707,6 @@ footer hr{
 .language-text{
     display: inline-block;
 }
-
-
-
-
 
 
 
