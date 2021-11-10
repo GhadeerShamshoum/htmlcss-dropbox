@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -160,7 +161,7 @@ nav a:hover{
     top: 253px;
 }
 
-}
+
 .img-jumbo, .paragraph-top{
     display: inline-block;
     
@@ -480,10 +481,10 @@ main .choices{
 }
 
 #sponsors, footer{
-    
     width: 100vw;
     height: 100%;
 }
+
 
 #sponsors::after{
     content: '';
@@ -501,6 +502,7 @@ main .choices{
 }
 .part.center{
     width: 40%;
+    overflow: hidden;
 }
 
 
@@ -508,19 +510,63 @@ main .choices{
     font-size: 0;
     height: 15vw;
 }
+#sponsor a{
+    cursor: pointer;
+}
 
 .sponsor.logo1, .sponsor.logo2, .sponsor.logo3, .sponsor.logo4, .sponsor.logo5, .sponsor.logo6, .sponsor.logo7, .sponsor.logo8 {
     display: inline-block;
     margin: 0;
-    width: 50%;
     height: 100%;
+    width: 50%;
     
 }
 
-#sponsors.sponsor:hover .sponsor::after{
-    border:3px rgb(191, 219, 191);
-
+#main-text-logo, #text-logo2, #text-logo3,#text-logo4, #text-logo5, #text-logo6, #text-logo7, #text-logo8{
+    height: 100%;
+    padding: 80px 10px;
+   
 }
+
+.sponsor.logo1:hover{
+    border: 7px solid rgb(200, 221, 200);
+    
+}
+.sponsor.logo2:hover{
+    
+    border: 7px solid rgb(233, 160, 160);
+}
+    
+.sponsor.logo3:hover{
+    
+    border: 7px solid lightblue;
+    
+}
+.sponsor.logo4:hover{
+    border: 7px solid rgb(230, 144, 144);
+    
+}
+.sponsor.logo5:hover{
+    
+    border: 7px solid rgb(218, 126, 126);
+    
+}
+.sponsor.logo6:hover{
+    
+    border: 7px solid lightskyblue;
+    
+}
+.sponsor.logo7:hover{
+    
+    border: 7px solid rgb(133, 133, 230);
+    
+}
+.sponsor.logo8:hover{
+    
+    border: 7px solid lightyellow;
+    
+}
+
 
 .sponsor.logo1 {
     background-color: rgb(151, 216, 151);
@@ -564,9 +610,14 @@ main .choices{
     padding: 40px;
     background-color: lightgray;
 }
+.logo-image-center{
+    height: 80px;
+    width: 80px;
+}
 
-#img-center-part{
-    height: 40px;
+.logo-image-center img{
+    width: 100%;
+    object-fit: cover;
     
 }
 .hr-part-center{
@@ -576,7 +627,7 @@ main .choices{
 }
 
 .paragraph-center{
-    margin: 50px 0;
+    margin: 30px 0 20px 0;
     line-height: 19px;
 }
 
